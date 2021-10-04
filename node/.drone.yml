@@ -7,5 +7,6 @@ pipeline:
       - yarn --version
       - yarn config set cache-folder .yarn-cache
       - yarn install
+      - node app.js
     scripts:
       - node app.js
