@@ -1,0 +1,9 @@
+pipeline:
+  install:
+    image: node:10-slim
+    commands:
+      - node -v
+      - npm -v
+      - yarn --version
+      - yarn config set cache-folder .yarn-cache
+      - yarn install
